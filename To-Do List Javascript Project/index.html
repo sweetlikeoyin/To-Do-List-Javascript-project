@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div class="scroll-bar">
+      <div class="scroll-bar-inner">
+        <!--Introductory Part Start-->
+        <div class="introductory">
+          <img
+            class="media"
+            src="img/photo-1641915953774-cee80bc4f1da.jpg"
+            style="width: 110px; height: 110px"
+          />
+          <h1 class="list">To-do List</h1>
+          <p class="rise">Rise and Shine!</p>
+          <p class="energy">Your energy is at its peak - make it count!</p>
+          <div class="focus">
+            <svg
+              style="
+                width: 20px;
+                color: oklch(0.555 0.163 48.998);
+                margin-top: 7.5px;
+              "
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+              />
+            </svg>
+            <p class="mode">Day Mode • Focus on what fits your energy</p>
+          </div>
+        </div>
+        <!--Introductory Part End-->
+
+        <!--Energizes Start-->
+        <div class="Energizes">
+          <input class="holder" placeholder="What energizes your day?" />
+          <div class="task js-task">
+            <div class="couple">
+              <div>
+                <button class="daily js-daily">
+                  <svg
+                    class="svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                    />
+                  </svg>
+                  <p class="days">Day Task</p>
+                </button>
+              </div>
+              <div>
+                <button id="strokeBtn" class="stroke js-nights-toogle">
+                  <svg
+                    style="width: 15px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                    />
+                  </svg>
+                  <p class="nights">Night Task</p>
+                </button>
+              </div>
+            </div>
+            <div class="addition">
+              <svg
+                class="sign"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+              <button id="addBtn" class="addup js-add-up">Add</button>
+            </div>
+          </div>
+        </div>
+        <!--Energizes End-->
+
+        <!--Day and Night Start-->
+        <div class="everything">
+          <div class="wrapper-1">
+            <div class="roll-1">
+              <div class="highfocus">
+                <svg
+                  class="sun"
+                  style="width: 30px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                  />
+                </svg>
+                <div class="goals">
+                  <p class="energy-2">Day Energy</p>
+                  <p class="active">
+                    High focus • Active goals • Creative work
+                  </p>
+                </div>
+                <h1 class="numbers">
+                  <svg
+                    style="width: 20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+                    />
+                  </svg>
+                  <p>1/3</p>
+                </h1>
+              </div>
+              <div class="diagram">
+                <div class="track">
+                  <div class="fill" style="width: 33.3333%"></div>
+                </div>
+              </div>
+              <p class="channel">
+                Channel your morning energy into meaningful action
+              </p>
+            </div>
+
+            <div class="meditation">
+              <svg
+                style="
+                  width: 20px;
+                  color: oklch(0.666 0.179 58.318);
+                  display: block;
+                "
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+              <img
+                class="js-checkbox"
+                style="width: 20px"
+                src="img/icons8-blank-checkbox-50.png"
+              />
+
+              <h3 class="gratitude">
+                Morning meditation and gratitude <br class="breaks" />
+                practice
+              </h3>
+
+              <svg
+                class="delete-1 js-delete"
+                style="width: 18px"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                />
+              </svg>
+            </div>
+
+            <div class="fresh">
+              <svg
+                style="
+                  width: 20px;
+                  color: oklch(0.666 0.179 58.318);
+                  display: block;
+                "
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+              <img
+                class="js-checkbox"
+                style="width: 20px; display: inline-block"
+                src="img/icons8-blank-checkbox-50.png"
+              />
+              <h3 class="tackle">
+                Tackle that important project with <br class="breaks-2" />
+                fresh energy
+              </h3>
+              <svg
+                class="delete-2 js-delete"
+                style="width: 18px; margin-left: 10px; margin-top: 8px"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                />
+              </svg>
+            </div>
+
+            <div class="nature">
+              <svg
+                style="
+                  width: 20px;
+                  color: oklch(0.666 0.179 58.318);
+                  display: block;
+                "
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+
+              <!-- <svg
+                class="svg-2"
+                width="20"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="3"
+                  fill="black"
+                  stroke="black"
+                  stroke-width="2"
+                />
+                <path
+                  d="M6 12l4 4 8-8"
+                  stroke="white"
+                  stroke-width="2.5"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg> -->
+
+              <img
+                class="js-checkbox"
+                style="width: 20px; display: inline-block"
+                src="img/icons8-blank-checkbox-50.png"
+              />
+
+              <h3 class="mindful">Take a mindful walk in nature</h3>
+              <svg
+                class="delete-3 js-delete"
+                style="width: 18px; margin-left: 10px; margin-top: 8px"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <div class="calm-1">
+              <div>
+                <div class="all">
+                  <svg
+                    class="moon"
+                    style="width: 25px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                    />
+                  </svg>
+                  <div class="self-care">
+                    <p class="nightss">Night Calm</p>
+                    <p class="reflection">
+                      Reflection • Preparation • Self-care
+                    </p>
+                  </div>
+                  <div class="numbers-2">
+                    <svg
+                      style="width: 20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                      />
+                    </svg>
+                    <p class="three">1/3</p>
+                  </div>
+                </div>
+                <div class="chart">
+                  <div class="pie">
+                    <div class="up" style="width: 33.3333%"></div>
+                  </div>
+                </div>
+                <h3 class="wind">
+                  Wind down mindfully and prepare for tomorrow's victories
+                </h3>
+              </div>
+            </div>
+
+            <div class="combination">
+              <div class="good">
+                <svg
+                  style="
+                    width: 20px;
+                    color: oklch(0.962 0.018 272.314);
+                    display: block;
+                    color: blue;
+                  "
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                  />
+                </svg>
+                <img
+                  class="js-checkbox"
+                  style="width: 20px; display: inline-block"
+                  src="img/icons8-blank-checkbox-50.png"
+                />
+                <h4 class="book">Wind down with a good book</h4>
+                <svg
+                  class="delete-4 js-delete"
+                  style="width: 18px; margin-right: 10px; margin-top: 5px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                  />
+                </svg>
+              </div>
+
+              <div class="second-frame">
+                <svg
+                  style="
+                    width: 20px;
+                    color: oklch(0.962 0.018 272.314);
+                    display: block;
+                    color: blue;
+                  "
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                  />
+                </svg>
+                <img
+                  class="js-checkbox"
+                  style="width: 20px"
+                  src="img/icons8-blank-checkbox-50.png"
+                />
+                <h4 class="accessories">
+                  Prepare tomorrow's clothes and <br class="clothes-2" />
+                  priorities
+                </h4>
+                <svg
+                  class="delete-5 js-delete"
+                  style="width: 18px; margin-right: 10px; margin-top: 5px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                  />
+                </svg>
+              </div>
+
+              <div class="record">
+                <svg
+                  style="
+                    width: 20px;
+                    color: oklch(0.962 0.018 272.314);
+                    display: block;
+                    color: blue;
+                  "
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                  />
+                </svg>
+                <!-- <svg
+                  class="checked-2"
+                  width="20"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="2"
+                    y="2"
+                    width="20"
+                    height="20"
+                    rx="3"
+                    fill="black"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M6 12l4 4 8-8"
+                    stroke="white"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg> -->
+
+                <img
+                  class="js-checkbox"
+                  style="width: 20px; display: inline-block"
+                  src="img/icons8-blank-checkbox-50.png"
+                />
+
+                <h4 class="journaling">Evening reflection and journaling</h4>
+                <svg
+                  class="delete-6 js-delete"
+                  style="width: 18px; margin-right: 10px; margin-top: 5px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Day and Night End-->
+
+        <div class="center">
+          <div>
+            <div class="rhythm">
+              <p>Your daily rhythm is powerful</p>
+              <svg
+                style="width: 20px; color: oklch(0.769 0.188 70.08)"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+                />
+              </svg>
+            </div>
+
+            <div class="big-moves">
+              <div class="movement">
+                <svg
+                  class="movement-1"
+                  style="color: oklch(0.769 0.188 70.08)"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                  />
+                </svg>
+                <p>Morning energy for big moves</p>
+              </div>
+
+              <div class="eve">
+                <svg
+                  class="eve-1"
+                  style="color: blue"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                  />
+                </svg>
+                <p>Evening calm for reflection</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="reloading">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"
+              />
+            </svg>
+          </button>
+
+          <button class="preview-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+              />
+            </svg>
+            <p>Preview</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-1">
+        <div class="commentary">
+          <div>
+            <!-- <h5 class="comment-0">
+              Comments <span style="color: gray"> 0 </span>
+            </h5> -->
+            <h5 class="comment-0">
+              Comments
+              <span id="comment-count-top" style="color: gray"> 0 </span>
+              <span
+                id="last-comment-time"
+                style="color: gray; font-size: 13px"
+              ></span>
+            </h5>
+            <div class="input-wrapper">
+              <div
+                class="avatar"
+                id="form-avatar"
+                data-name="Falowo Oyindamola"
+              >
+                F
+              </div>
+              <div class="avatar-popover" id="avatar-popover">
+                <div class="name">Falowo Oyndamola</div>
+                <div class="email">falowo@example.com</div>
+              </div>
+              <textarea
+                id="text-input"
+                class="place"
+                placeholder="Add a comment"
+                required
+              ></textarea>
+              <button class="post-1 post-2">Post</button>
+            </div>
+          </div>
+          <div class="list-toolbar">
+            <p id="comment-count">0 comments</p>
+            <div class="filter-wrapper">
+              <button class="filter-btn" id="filter-btn">
+                <span class="filter-label">All</span>
+                <span class="chevron">▾</span>
+              </button>
+              <div class="filter-dropdown" id="filter-dropdown">
+                <button class="filter-all-btn">All</button>
+                <button class="filter-mine-btn">Your comments</button>
+              </div>
+            </div>
+          </div>
+          <ul id="comment-list"></ul>
+        </div>
+
+        <div class="last">
+          <div class="band-1">
+            <h5 style="font-size: medium; margin: 0; margin-left: 15px">
+              Details
+            </h5>
+
+            <div>
+              <div class="mele">
+                <p class="two">J</p>
+                <p>MELEDUCK</p>
+              </div>
+
+              <div class="figma-1">
+                <svg
+                  style="width: 25px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                  />
+                </svg>
+                <p style="font-size: medium">For Figma Make</p>
+              </div>
+            </div>
+
+            <div class="border"></div>
+          </div>
+
+          <div class="share-1">
+            <h5 style="font-size: 16px">Share</h5>
+
+            <div>
+              <svg
+                class="logo-4"
+                style="width: 20px"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+                />
+              </svg>
+              <img
+                class="logo-2"
+                style="width: 20px; margin-left: 8px"
+                src="img/icons8-x-logo-50.png"
+              />
+              <img
+                class="logo-3"
+                style="width: 20px; margin-left: 8px"
+                src="img/icons8-facebook-logo-30.png"
+              />
+            </div>
+
+            <div>
+              <h5>Last updated 10 months ago</h5>
+              <h5>
+                Licensed under
+                <span style="color: rgb(58, 58, 216)"> CC BY 4.0 </span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="scripts/todo.js"></script>
+    <script type="module" src="scripts/comment.js"></script>
+    <script type="module" src="scripts/SectionOne.js"></script>
+  </body>
+</html>
